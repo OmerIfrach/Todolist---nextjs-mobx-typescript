@@ -64,7 +64,7 @@ class TodoList extends React.Component<Props> {
                                 removeTodo={() => { this.removeTodo(todo.id) }}
                             />
                         })
-                        : <div className="NoTodosToDisplayMsg">אין משימות למשתמש זה</div>
+                        : <div className="NoTodosToDisplayMsg">אין פתקים למשתמש זה</div>
                 }
                 <h3 className="AddTodoTitle">הוסף משימה</h3>
                 <input className="AddTodoInput" value={this.state.addTodo} onChange={(e) => {
