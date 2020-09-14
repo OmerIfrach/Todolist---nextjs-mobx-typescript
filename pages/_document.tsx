@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <title>Next.js TypeScript Example</title>
         </Head>
         <body>
           <Main />

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+
+body{
+    margin: 0;
+    background-color: #EFEFEF;
+    font-family: 'Arimo', sans-serif;
+}
+.renderMessageContainer{
+  margin: auto;
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 2%;
+}
+.Navbar{
+    width: 80%;
+    padding: 20px 10%;
+    background-color: #FBFDFF;
+    box-shadow: 0 0 0 2px #eee;
+    color: #1D2731;
+    margin-bottom: 2%;
+    font-size: x-large;
+    font-weight: bold;
+}
+.todosContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.TodosTitle{
+    margin: auto auto 20px auto;
+    width: 80%;
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-size: x-large;
+}
+.AddTodoTitle{
+    margin: 2% auto 20px auto;
+    width: 80%;
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-size: x-large;
+}
+.todoListHeader{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.todoListHeader span{
+    width: 20%;
+}
+.todoContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    color: #1D2731;
+    text-align: center;
+    justify-content: flex-end;
+}
+.todoContainer span{
+    width: 20%;
+}
+
+.CheckboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .TodoCheckboxContainer{
+      width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .CheckboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+  }
+  
+  .CheckboxContainer:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .CheckboxContainer input:checked ~ .checkmark {
+    background-color: #EBB92B;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .CheckboxContainer input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .CheckboxContainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .removeTodoBtn{
+      background-color: #FF3B3F;
+      color: white;
+      border-radius: 25px;
+      border: 1px solid black;
+      box-shadow: 1px 1px 1px 2px #eee;
+  }
+  .AddTodoBtn{
+      margin-top: 1%;
+      align-self: center;
+      width: 25%;
+      padding: 10px 10px;
+    background-color: #009933;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 2px #eee;
+  }
+  .AddTodoInput{
+      width: 30%;
+      border-radius: 20px;
+      margin: auto;
+      padding: 5px 10px;
+  }
+  .NoTodosToDisplayMsg{
+      font-size: large;
+      margin: auto;
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .noShowOnMobile {
+      display: none;
+    }
+    .todoListHeader span{
+        width: 33%;
+    }
+    .todoContainer span{
+        width: 33%;
+    }
+  }

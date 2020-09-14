@@ -1,5 +1,5 @@
-const port = parseInt(process.env.PORT, 10) || 3000
-const dev = process.env.NODE_ENV !== 'production'
+const port = 3000
+const dev = 'production'
 
 const { createServer } = require('http')
 const { parse } = require('url')
